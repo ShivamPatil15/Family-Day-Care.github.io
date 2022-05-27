@@ -1,0 +1,2633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Navigation menu*/
+.fs {
+  background: url(images/istockphot3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.logo {
+  margin-left: 14rem;
+  margin-top: 2rem;
+  height: 10rem;
+}
+
+
+.sbtn {
+  display: flex;
+  margin-top: 10rem;
+  margin-right: 23rem;
+  
+  
+}
+
+.search{
+  border-radius: 2rem;
+  
+}
+
+.sbtn>i{
+  margin-left: -2rem;
+  margin-top: .5rem;
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #259bd1;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.navbar .active{
+  background-color:rgb(21, 84, 167); ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(21, 84, 167);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(48, 131, 240, 0.836);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #259bd1;
+  color: white;
+  border-radius: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(21, 84, 167);
+  color: white;
+}
+
+
+
+
+
+
+/*   slider */
+.caro {
+  margin-left: 22rem;
+  margin-right: 22rem;
+  height: 25rem;
+
+
+
+}
+
+.carousel {
+  width: 69vw;
+  height: 50vh;
+  position: relative;
+
+}
+
+.carousel>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  margin-left: -8rem;
+  margin-right: -9rem;
+
+}
+
+.slide>img {
+  display: block;
+  width: 69.1vw;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(241, 143, 13, 0.918);
+  cursor: pointer;
+ 
+  padding: 0 .5rem;
+  background-color: rgba(255, 255, 255, 0.89);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgb(255, 145, 0);
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  margin-left: -5rem;
+  border-radius: 20rem;
+}
+
+.carousel-button.next {
+  margin-left: 68rem;
+  border-radius: 20rem;
+  margin-top: -.8rem;
+}
+
+
+/* about us */
+
+.about-container {
+  display: flex;
+  height: 25rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-color: orange;
+  margin-top: 5rem;
+}
+
+.about-container .aboutimg {
+  margin: 3rem;
+
+}
+
+.about-container .aboutimg img {
+  height: 18rem;
+  margin-left: 5rem;
+
+
+}
+
+
+.about-container .abouttxt {
+  margin-top: 4rem;
+}
+
+.abouttxt h1 {
+  color: white;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.abouttxt p {
+  color: white;
+  margin-bottom: 4.2rem;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.abouttxt .btn {
+  border-radius: .5rem;
+  height: 3rem;
+  width: 12rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* Gallery */
+
+
+.gimg {
+  background: url(images/g4.png);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 14rem;
+  margin-right: 22.1rem;
+
+}
+
+.gimg h1{
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel1{
+
+  height: 30rem;
+  width: 55vw;
+  margin-left: 8rem;
+  margin-right: 10rem;
+}
+
+
+
+.carousel-cell {
+  width: 40%;
+  height: 74%;
+  top: 7rem;
+  background-size: cover;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+
+
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white
+}
+
+
+
+/* footer section*/
+.fimg {
+  display: flex;
+  height: 15rem;
+  background: url(images/5056b25997b9d9cadfb46b6474d5b991--natural-skin-care-the-natural.jpg);
+  background-position: center;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.fimg h1 {
+  
+  color: rgb(248, 248, 248);
+  margin-top: 7rem;
+  margin-left: 18rem;
+}
+
+.fbtn {
+  width: 12rem;
+  height: 3rem;
+  margin-left: 2rem;
+  margin-top: 7rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+
+.fimg h1:hover {
+  
+  color: rgb(7, 218, 255);
+  
+}
+
+
+
+.fbtn:hover {
+ background-color: rgb(255, 7, 7);
+ color: white;
+}
+
+
+
+.fblue {
+
+  height: 10rem;
+  background-color: rgb(21, 84, 167);
+  color: white;
+  margin-left: 14rem;
+  margin-right: 22rem;
+
+}
+
+.fblue .blist {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+
+}
+
+.blist li  {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+}
+
+.blist li i{
+  margin-left: 1rem;
+  
+}
+
+ li .face{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+li .twit{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+.blist li i:hover{
+  cursor: pointer;
+}
+
+
+
+
+
+
+.foot {
+  background-color: orange;
+  height: 5rem;
+  color: whitesmoke;
+  font-family: 'Macondo', cursive;
+  font-weight: 50rem;
+  font-size: 1.6rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+}
+
+.foot {
+  padding: 5rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries start here*/
+
+
+
+
+@media (min-width: 768px) and (max-width: 1030px) {
+  
+
+  
+  html {
+    font-size: 45%;
+  }
+  
+  
+  
+
+.fs {
+  background: url(images/istockphot3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.logo {
+  margin-left: 14rem;
+  margin-top: 2rem;
+  height: 10rem;
+}
+
+
+.sbtn {
+  display: flex;
+  margin-top: 10rem;
+  margin-right: 23rem;
+  
+  
+}
+
+.search{
+  border-radius: 2rem;
+  
+}
+
+.sbtn>i{
+  margin-left: -2rem;
+  margin-top: .5rem;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #259bd1;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.navbar .active{
+  background-color:rgb(21, 84, 167); ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(21, 84, 167);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(48, 131, 240, 0.836);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #259bd1;
+  color: white;
+  border-radius: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(21, 84, 167);
+  color: white;
+}
+
+
+
+.caro {
+  margin-left: 22rem;
+  margin-right: 22rem;
+  height: 25rem;
+
+
+
+}
+
+.carousel {
+  width: 69vw;
+  height: 50vh;
+  position: relative;
+
+}
+
+.carousel>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  margin-left: -8rem;
+  margin-right: -9rem;
+
+}
+
+.slide>img {
+  display: block;
+  width: 73vw;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(241, 143, 13, 0.918);
+  cursor: pointer;
+ 
+  padding: 0 .5rem;
+  background-color: rgba(255, 255, 255, 0.89);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgb(255, 145, 0);
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  margin-left: -5rem;
+  border-radius: 20rem;
+  margin-top: -18rem;
+}
+
+.carousel-button.next {
+  margin-left: 86rem;
+  border-radius: 20rem;
+  margin-top: -18rem;
+}
+
+
+
+
+.about-container {
+  display: flex;
+  height: 25rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-color: orange;
+  margin-top: 5rem;
+}
+
+.about-container .aboutimg {
+  margin: 3rem;
+
+}
+
+.about-container .aboutimg img {
+  height: 18rem;
+  margin-left: 5rem;
+
+
+}
+
+
+.about-container .abouttxt {
+  margin-top: 4rem;
+}
+
+.abouttxt h1 {
+  color: white;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.abouttxt p {
+  color: white;
+  margin-bottom: 4.2rem;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.abouttxt .btn {
+  
+  border-radius: .5rem;
+  height: 3rem;
+  width: 12rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+.gimg {
+  background: url(images/g4.png);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 14rem;
+  margin-right: 22.1rem;
+
+}
+
+.gimg h1{
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel1{
+
+  height: 30rem;
+  width: 55vw;
+  margin-left: 8rem;
+  margin-right: 10rem;
+}
+
+
+
+.carousel-cell {
+  width: 40%;
+  height: 74%;
+  top: 7rem;
+  background-size: cover;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+
+
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white
+}
+
+
+
+
+.fimg {
+  display: flex;
+  height: 15rem;
+  background: url(images/5056b25997b9d9cadfb46b6474d5b991--natural-skin-care-the-natural.jpg);
+  background-position: center;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.fimg h1 {
+  
+  color: rgb(248, 248, 248);
+  margin-top: 7rem;
+  margin-left: 22rem;
+}
+
+.fbtn {
+  width: 12rem;
+  height: 3rem;
+  margin-left: 2rem;
+  margin-top: 7rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+
+.fimg h1:hover {
+  
+  color: rgb(7, 218, 255);
+  
+}
+
+.fbtn:hover {
+ background-color: rgb(255, 7, 7);
+ color: white;
+}
+
+
+
+.fblue {
+
+  height: 10rem;
+  background-color: rgb(21, 84, 167);
+  color: white;
+  margin-left: 14rem;
+  margin-right: 22rem;
+
+}
+
+.fblue .blist {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+
+}
+
+.blist li  {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+}
+
+.blist li i{
+  margin-left: 1rem;
+  
+}
+
+ li .face{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+li .twit{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+.blist li i:hover{
+  cursor: pointer;
+}
+
+.foot {
+  background-color: orange;
+  height: 5rem;
+  color: whitesmoke;
+  font-family: 'Macondo', cursive;
+  font-weight: 50rem;
+  font-size: 1.6rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+}
+
+.foot {
+  padding: 5rem;
+  text-align: center;
+}
+
+
+}
+
+
+
+
+@media (min-width: 1030px) and (max-width: 1366px) {
+
+   
+  html {
+    font-size: 45%;
+  }
+  
+  
+
+.fs {
+  background: url(images/istockphot3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.logo {
+  margin-left: 14rem;
+  margin-top: 2rem;
+  height: 10rem;
+}
+
+
+.sbtn {
+  display: flex;
+  margin-top: 10rem;
+  margin-right: 23rem;
+  
+  
+}
+
+.search{
+  border-radius: 2rem;
+  
+}
+
+.sbtn>i{
+  margin-left: -2rem;
+  margin-top: .5rem;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #259bd1;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.navbar .active{
+  background-color:rgb(21, 84, 167); ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(21, 84, 167);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(48, 131, 240, 0.836);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #259bd1;
+  color: white;
+  border-radius: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(21, 84, 167);
+  color: white;
+}
+
+
+
+.caro {
+  margin-left: 22rem;
+  margin-right: 22rem;
+  height: 25rem;
+
+
+
+}
+
+.carousel {
+  width: 69vw;
+  height: 50vh;
+  position: relative;
+
+}
+
+.carousel>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  margin-left: -8rem;
+  margin-right: -9rem;
+
+}
+
+.slide>img {
+  display: block;
+  width: 79.8vw;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(241, 143, 13, 0.918);
+  cursor: pointer;
+ 
+  padding: 0 .5rem;
+  background-color: rgba(255, 255, 255, 0.89);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgb(255, 145, 0);
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  margin-left: -5rem;
+  border-radius: 20rem;
+  margin-top: -18rem;
+}
+
+.carousel-button.next {
+  margin-left: 71.5vw;
+  
+  border-radius: 20rem;
+  margin-top: -18rem;
+}
+
+
+
+
+.about-container {
+  display: flex;
+  height: 25rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-color: orange;
+  margin-top: 5rem;
+}
+
+.about-container .aboutimg {
+  margin: 3rem;
+
+}
+
+.about-container .aboutimg img {
+  height: 18rem;
+  margin-left: 5rem;
+
+
+}
+
+
+.about-container .abouttxt {
+  margin-top: 4rem;
+}
+
+.abouttxt h1 {
+  color: white;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.abouttxt p {
+  color: white;
+  margin-bottom: 4.2rem;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.abouttxt .btn {
+  
+  border-radius: .5rem;
+  height: 3rem;
+  width: 12rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+.gimg {
+  background: url(images/g4.png);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 14rem;
+  margin-right: 22.1rem;
+
+}
+
+.gimg h1{
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel1 {
+
+  height: 30rem;
+  width: 55vw;
+  margin-left: 20rem;
+  margin-right: 10rem;
+}
+
+
+
+.carousel-cell {
+  width: 40%;
+  height: 74%;
+  top: 7rem;
+  background-size: cover;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+
+
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white
+}
+
+
+
+
+.fimg {
+  display: flex;
+  height: 15rem;
+  background: url(images/5056b25997b9d9cadfb46b6474d5b991--natural-skin-care-the-natural.jpg);
+  background-position: center;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.fimg h1 {
+  
+  color: rgb(248, 248, 248);
+  margin-top: 7rem;
+  margin-left: 50rem;
+}
+
+.fbtn {
+  width: 12rem;
+  height: 3rem;
+  margin-left: 2rem;
+  margin-top: 7rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+
+.fimg h1:hover {
+  
+  color: rgb(7, 218, 255);
+  
+}
+
+
+
+.fbtn:hover {
+ background-color: rgb(255, 7, 7);
+ color: white;
+}
+
+
+
+.fblue {
+
+  height: 10rem;
+  background-color: rgb(21, 84, 167);
+  color: white;
+  margin-left: 14rem;
+  margin-right: 22rem;
+
+}
+
+.fblue .blist {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+
+}
+
+.blist li  {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+}
+
+.blist li i{
+  margin-left: 1rem;
+  
+}
+
+ li .face{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+li .twit{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+.blist li i:hover{
+  cursor: pointer;
+}
+
+.foot {
+  background-color: orange;
+  height: 5rem;
+  color: whitesmoke;
+  font-family: 'Macondo', cursive;
+  font-weight: 50rem;
+  font-size: 1.6rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+}
+
+.foot {
+  padding: 5rem;
+  text-align: center;
+}
+
+}
+
+
+
+@media (min-width: 1370px) and (max-width: 1605px)
+{
+  html {
+    font-size: 45%;
+  }
+  
+  
+
+.fs {
+  background: url(images/istockphot3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.logo {
+  margin-left: 14rem;
+  margin-top: 2rem;
+  height: 10rem;
+}
+
+
+.sbtn {
+  display: flex;
+  margin-top: 10rem;
+  margin-right: 23rem;
+  
+  
+}
+
+.search{
+  border-radius: 2rem;
+  
+}
+
+.sbtn>i{
+  margin-left: -2rem;
+  margin-top: .5rem;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #259bd1;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.navbar .active{
+  background-color:rgb(21, 84, 167); ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(21, 84, 167);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(48, 131, 240, 0.836);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #259bd1;
+  color: white;
+  border-radius: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(21, 84, 167);
+  color: white;
+}
+
+
+
+.caro {
+  margin-left: 14rem;
+  margin-right: 45rem;
+  height: 25rem;
+
+
+
+}
+
+.carousel {
+  width: 69vw;
+  height: 50vh;
+  position: relative;
+
+}
+
+.carousel>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  margin-left: -8rem;
+  margin-right: -9rem;
+
+}
+
+.slide>img {
+  display: block;
+  width: 82.8vw;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(241, 143, 13, 0.918);
+  cursor: pointer;
+ 
+  padding: 0 .5rem;
+  background-color: rgba(255, 255, 255, 0.89);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgb(255, 145, 0);
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  margin-left: -5rem;
+  border-radius: 20rem;
+}
+
+.carousel-button.next {
+  margin-left: 75vw;
+  
+  border-radius: 20rem;
+  margin-top: -.8rem;
+}
+
+
+
+
+.about-container {
+  display: flex;
+  height: 25rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-color: orange;
+  margin-top: 5rem;
+}
+
+.about-container .aboutimg {
+  margin: 3rem;
+
+}
+
+.about-container .aboutimg img {
+  height: 18rem;
+  margin-left: 5rem;
+
+
+}
+
+
+.about-container .abouttxt {
+  margin-top: 4rem;
+}
+
+.abouttxt h1 {
+  color: white;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.abouttxt p {
+  color: white;
+  margin-bottom: 4.2rem;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.abouttxt .btn {
+  
+  border-radius: .5rem;
+  height: 3rem;
+  width: 12rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+.gimg {
+  background: url(images/g4.png);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 14rem;
+  margin-right: 22.1rem;
+
+}
+
+.gimg h1{
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel1 {
+
+  height: 30rem;
+  width: 60vw;
+  margin-left: 8rem;
+  margin-right: 10rem;
+}
+
+
+
+.carousel-cell {
+  width: 40%;
+  height: 74%;
+  top: 7rem;
+  background-size: cover;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+
+
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white
+}
+
+
+
+
+.fimg {
+  display: flex;
+  height: 15rem;
+  background: url(images/5056b25997b9d9cadfb46b6474d5b991--natural-skin-care-the-natural.jpg);
+  background-position: center;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.fimg h1 {
+  
+  color: rgb(248, 248, 248);
+  margin-top: 7rem;
+  margin-left: 70rem;
+}
+
+.fbtn {
+  width: 12rem;
+  height: 3rem;
+  margin-left: 2rem;
+  margin-top: 7rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+
+.fimg h1:hover {
+  
+  color: rgb(7, 218, 255);
+  
+}
+
+
+
+.fbtn:hover {
+ background-color: rgb(255, 7, 7);
+ color: white;
+}
+
+
+.fblue {
+
+  height: 10rem;
+  background-color: rgb(21, 84, 167);
+  color: white;
+  margin-left: 14rem;
+  margin-right: 22rem;
+
+}
+
+.fblue .blist {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+
+}
+
+.blist li  {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+}
+
+.blist li i{
+  margin-left: 1rem;
+  
+}
+
+ li .face{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+li .twit{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+.blist li i:hover{
+  cursor: pointer;
+}
+
+.foot {
+  background-color: orange;
+  height: 5rem;
+  color: whitesmoke;
+  font-family: 'Macondo', cursive;
+  font-weight: 50rem;
+  font-size: 1.6rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+}
+
+.foot {
+  padding: 5rem;
+  text-align: center;
+}
+}
+
+
+
+
+@media (min-width: 360px) and (max-width: 640px){
+  
+
+  
+  html {
+    font-size: 45%;
+  }
+  
+  
+
+.fs {
+  background: url(images/istockphot3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.logo {
+  margin-left: 14rem;
+  margin-top: 2rem;
+  height: 10rem;
+}
+
+
+.sbtn {
+  display: flex;
+  margin-top: 10rem;
+  margin-right: 23rem;
+  
+  
+}
+
+.search{
+  border-radius: 2rem;
+  
+}
+
+.sbtn>i{
+  margin-left: -2rem;
+  margin-top: .5rem;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #259bd1;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.navbar .active{
+  background-color:rgb(21, 84, 167); ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(21, 84, 167);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(48, 131, 240, 0.836);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #259bd1;
+  color: white;
+  border-radius: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(21, 84, 167);
+  color: white;
+}
+
+
+
+.caro {
+  margin-left: 22rem;
+  margin-right: 22rem;
+  height: 25rem;
+
+
+
+}
+
+.carousel {
+  width: 69vw;
+  height: 50vh;
+  position: relative;
+
+}
+
+.carousel>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  margin-left: -8rem;
+  margin-right: -9rem;
+
+}
+
+.slide>img {
+  display: block;
+  width: 56.8vw;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(241, 143, 13, 0.918);
+  cursor: pointer;
+ 
+  padding: 0 .5rem;
+  background-color: rgba(255, 255, 255, 0.89);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgb(255, 145, 0);
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  margin-left: -5rem;
+  border-radius: 20rem;
+  margin-top: -18rem;
+}
+
+.carousel-button.next {
+  margin-left: 34rem;
+  margin-top: -18rem;
+  border-radius: 20rem;
+  
+}
+
+
+
+
+.about-container {
+  display: flex;
+  height: 25rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-color: orange;
+  margin-top: 5rem;
+}
+
+.about-container .aboutimg {
+  margin: 3rem;
+
+}
+
+.about-container .aboutimg img {
+  height: 18rem;
+  margin-left: .5rem;
+  margin-right: .3rem;
+
+}
+
+
+.about-container .abouttxt {
+  margin-top: 4rem;
+}
+
+.abouttxt h1 {
+  color: white;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+}
+
+.abouttxt p {
+  color: white;
+  margin-bottom: 4.2rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.abouttxt .btn {
+  
+  border-radius: .5rem;
+  height: 3rem;
+  width: 12rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+.gimg {
+  background: url(images/g4.png);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 14rem;
+  margin-right: 22.1rem;
+
+}
+
+.gimg h1{
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel1 {
+
+  height: 30rem;
+  width: 40vw;
+  margin-left: 8rem;
+  margin-right: 10rem;
+}
+
+
+
+.carousel-cell {
+  width: 35%;
+  height: 74%;
+  top: 7rem;
+  background-size: cover;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+
+
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white
+}
+
+
+
+
+.fimg {
+  display: flex;
+  height: 15rem;
+  background: url(images/5056b25997b9d9cadfb46b6474d5b991--natural-skin-care-the-natural.jpg);
+  background-position: center;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.fimg h1 {
+  
+  color: rgb(248, 248, 248);
+  margin-top: 7rem;
+  margin-left: 8rem;
+}
+
+.fbtn {
+  width: 12rem;
+  height: 3rem;
+  margin-left: -.5rem;
+  margin-right: 5rem;
+  margin-top: 7rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+
+.fimg h1:hover {
+  
+  color: rgb(7, 218, 255);
+  
+}
+
+
+
+.fbtn:hover {
+ background-color: rgb(255, 7, 7);
+ color: white;
+}
+
+
+
+
+
+.fblue {
+
+  height: 10rem;
+  background-color: rgb(21, 84, 167);
+  color: white;
+  margin-left: 14rem;
+  margin-right: 22rem;
+
+}
+
+.fblue .blist {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+
+}
+
+.blist li  {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+  font-size: .7rem;
+}
+
+.blist li i{
+  margin-left: -.1rem;
+  
+}
+
+ li .face{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+li .twit{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+.blist li i:hover{
+  cursor: pointer;
+}
+
+.foot {
+  background-color: orange;
+  height: 5rem;
+  color: whitesmoke;
+  font-family: 'Macondo', cursive;
+  font-weight: 50rem;
+  font-size: 1.6rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+}
+
+.foot {
+  padding: 5rem;
+  text-align: center;
+}
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+  
+  
+  html {
+    font-size: 45%;
+  }
+  
+  
+
+.fs {
+  background: url(images/istockphot3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.logo {
+  margin-left: 14rem;
+  margin-top: 2rem;
+  height: 10rem;
+}
+
+
+.sbtn {
+  display: flex;
+  margin-top: 10rem;
+ 
+  
+  
+}
+
+.search{
+  border-radius: 2rem;
+  width:10rem;
+}
+
+.sbtn>i{
+  margin-left: -2rem;
+  margin-top: .5rem;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #259bd1;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.navbar .active{
+  background-color:rgb(21, 84, 167); ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(21, 84, 167);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(48, 131, 240, 0.836);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #259bd1;
+  color: white;
+  border-radius: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(21, 84, 167);
+  color: white;
+}
+
+
+
+.caro {
+  margin-left: 22rem;
+  margin-right: 22rem;
+  height: 25rem;
+
+
+
+}
+
+.carousel {
+  width: 69vw;
+  height: 50vh;
+  position: relative;
+
+}
+
+.carousel>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  margin-left: -8rem;
+  margin-right: -9rem;
+
+}
+
+.slide>img {
+  display: block;
+  width: 42.5vw;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(241, 143, 13, 0.918);
+  cursor: pointer;
+ 
+  padding: 0 .5rem;
+  background-color: rgba(255, 255, 255, 0.89);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgb(255, 145, 0);
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  margin-left: -7rem;
+  border-radius: 15rem;
+  margin-top: -18rem;
+}
+
+.carousel-button.next {
+  margin-left: 15rem;
+  margin-top: -18rem;
+  border-radius: 15rem;
+  
+}
+
+
+
+
+.about-container {
+  display: flex;
+  height: 25rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-color: orange;
+  margin-top: 5rem;
+}
+
+.about-container .aboutimg {
+  margin: 3rem;
+
+}
+
+.about-container .aboutimg img {
+  height: 10rem;
+  margin-left: -2.5rem;
+  margin-right: .3rem;
+  margin-top: 5rem;
+}
+
+
+.about-container .abouttxt {
+  margin-top: 4rem;
+}
+
+.abouttxt h1 {
+  color: white;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+}
+
+.abouttxt p {
+  color: white;
+  margin-bottom: 4.2rem;
+  text-align: left;
+  font-size: -.3rem;
+  margin-left: -2rem;
+}
+
+.abouttxt .btn {
+  
+  border-radius: .5rem;
+  height: 3rem;
+  width: 10rem;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  margin-top: -15rem;
+  margin-left: -.8rem;
+}
+
+
+
+
+
+.gimg {
+  background: url(images/g4.png);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 14rem;
+  margin-right: 22.1rem;
+
+}
+
+.gimg h1{
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel1 {
+
+  height: 30rem;
+  width: 40vw;
+  margin-left: -.1rem;
+  margin-right: 12rem;
+}
+
+
+
+.carousel-cell {
+  width: 35%;
+  height: 74%;
+  top: 7rem;
+  background-size: cover;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+
+
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white
+}
+
+
+
+
+.fimg {
+  display: flex;
+  height: 15rem;
+  background: url(images/5056b25997b9d9cadfb46b6474d5b991--natural-skin-care-the-natural.jpg);
+  background-position: center;
+  margin-left: 14rem;
+  margin-right: 22rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.fimg h1 {
+  
+  color: rgb(248, 248, 248);
+  margin-top: 7rem;
+  margin-left: 8rem;
+}
+
+.fbtn {
+  width: 15rem;
+  height: 5rem;
+  margin-left: -.5rem;
+  margin-right: 5rem;
+  margin-top: 7rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+
+.fimg h1:hover {
+  
+  color: rgb(7, 218, 255);
+  
+}
+
+
+
+.fbtn:hover {
+ background-color: rgb(255, 7, 7);
+ color: white;
+}
+
+
+
+
+
+
+.fblue {
+
+  height: 10rem;
+  background-color: rgb(21, 84, 167);
+  color: white;
+  margin-left: 14rem;
+  margin-right: 22rem;
+
+}
+
+.fblue .blist {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+
+}
+
+.blist li  {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+  font-size: .5rem;
+}
+
+.blist li i{
+  margin-left: -.1rem;
+  
+}
+
+ li .face{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+li .twit{
+  margin-top: -.5rem;
+  list-style: none;
+}
+
+.blist li i:hover{
+  cursor: pointer;
+}
+
+.foot {
+  background-color: orange;
+  height: 5rem;
+  color: whitesmoke;
+  font-family: 'Macondo', cursive;
+  font-weight: 50rem;
+  font-size: 1.6rem;
+  margin-left: 14rem;
+  margin-right: 22rem;
+}
+
+.foot {
+  padding: 5rem;
+  text-align: center;
+}
+}
